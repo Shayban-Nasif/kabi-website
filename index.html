@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabir Md Nasim Al Awal — Kabi | Engineer · Poet · Explorer</title>
+  <meta name="description" content="Personal branding site for Kabir Md Nasim Al Awal (Kabi) — Data Center Technician at Microsoft, Bengali poet, storyteller, and explorer based in Tokyo, Japan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;500;600&family=Hind+Siliguri:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">KABI</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#creative">Creative</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Tokyo, Japan
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line-1">Kabir Md</span>
+        <span class="name-line-2">Nasim Al Awal</span>
+        <span class="name-line-3">— Kabi —</span>
+      </h1>
+      <p class="hero-tagline">Engineer by Day. <em>Poet by Heart.</em></p>
+      <p class="hero-subtitle">
+        Data Center Technician @ <strong>Microsoft</strong> &nbsp;·&nbsp;
+        Bengali Poet &nbsp;·&nbsp; Storyteller &nbsp;·&nbsp; Explorer
+      </p>
+      <div class="hero-ctas">
+        <a href="#journey" class="btn btn-primary">Explore My Journey</a>
+        <a href="#creative" class="btn btn-outline">Read My Poems</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who is Kabi</span>
+        <h2>A Story of Persistence</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">From a small village in Kushtia, Bangladesh to the data centers of Microsoft in Tokyo — Nasim's journey is one of relentless persistence, boundless curiosity, and creative fire.</p>
+          <p>He left home with a note in the drawer and a dream in his heart. Rejected by tech giants multiple times, he kept building, kept learning, kept writing. Today he works at Microsoft by day and weaves Bengali poetry by night.</p>
+          <p>His writing — poems, stories, songs — is a window into the soul of a man who carries two worlds: the warmth of Bangladesh and the precision of Japan.</p>
+          <div class="about-langs">
+            <span class="lang-tag">বাংলা <em>(Native)</em></span>
+            <span class="lang-tag">English <em>(Advanced)</em></span>
+            <span class="lang-tag">日本語 <em>(N4)</em></span>
+            <span class="lang-tag">हिन्दी <em>(Elementary)</em></span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years in Tech</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="64">0</span>
+            <span class="stat-label">Bangladesh Districts Explored</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="22">0</span>
+            <span class="stat-label">Japanese Prefectures Visited</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="1200">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Teachers Trained</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY / TIMELINE ===== -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Journey</span>
+        <h2>Life in Chapters</h2>
+        <p class="section-desc">A life lived across two continents, three cultures, and countless stories.</p>
+      </div>
+      <div class="timeline-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-category="personal">
+          <div class="timeline-dot personal"></div>
+          <div class="timeline-card">
+            <span class="timeline-category personal">Personal</span>
+            <span class="timeline-year">Early Life</span>
+            <h3>Roots in Kushtia</h3>
+            <p>Born and raised in a small village in Kushtia, Bangladesh. Found solace and expression in poetry and storytelling from an early age — a habit that never left him.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="education">
+          <div class="timeline-dot education"></div>
+          <div class="timeline-card">
+            <span class="timeline-category education">Education</span>
+            <span class="timeline-year">2007</span>
+            <h3>Secondary School Certificate</h3>
+            <p>Completed SSC from <strong>Amla Sadarpur High School</strong>, Kushtia — the first step in a journey toward technology and the world beyond his village.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">Oct 2010 – Jan 2011</span>
+            <h3>Technical Intern</h3>
+            <p><strong>REWM Project</strong> — First professional experience in technology, laying the groundwork for a lifelong career in IT.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="education">
+          <div class="timeline-dot education"></div>
+          <div class="timeline-card">
+            <span class="timeline-category education">Education</span>
+            <span class="timeline-year">2011</span>
+            <h3>Diploma in Computer Technology</h3>
+            <p><strong>Kushtia Polytechnic Institute</strong> — Built foundational skills in networking, hardware, and software systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">Apr 2012 – Dec 2017</span>
+            <h3>Program Associate – Technical Support</h3>
+            <p><strong>CLP</strong> — Delivered IT support across <strong>250 schools</strong> in all 64 districts of Bangladesh. Trained <strong>1,200 high school teachers</strong> and 800 head teachers. Earned Outstanding Performer designation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="personal">
+          <div class="timeline-dot personal"></div>
+          <div class="timeline-card">
+            <span class="timeline-category personal">Personal</span>
+            <span class="timeline-year">2012 – 2017</span>
+            <h3>Exploring All 64 Districts</h3>
+            <p>During his work at CLP, Nasim traveled to every single district in Bangladesh — experiencing the country's full breadth of culture, landscape, and humanity.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="education">
+          <div class="timeline-dot education"></div>
+          <div class="timeline-card">
+            <span class="timeline-category education">Education</span>
+            <span class="timeline-year">2017</span>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <p><strong>Bangladesh University</strong> — Completed his engineering degree while continuing professional IT work and nurturing his creative writing.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">2018</span>
+            <h3>IT Leadership Roles</h3>
+            <p>Served as <strong>Assistant Director – IT Support (DNET)</strong> and <strong>Assistant Manager – IT Support (KITE)</strong>, stepping into leadership within the tech sector.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="personal">
+          <div class="timeline-dot personal"></div>
+          <div class="timeline-card">
+            <span class="timeline-category personal">Personal</span>
+            <span class="timeline-year">2019</span>
+            <h3>The Note in the Drawer</h3>
+            <p>Left home for Japan with a handwritten note in the drawer and a dream in his heart — beginning the most transformative chapter of his life.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">Jan 2019 – Apr 2020</span>
+            <h3>Machine Engineer – INOSYS</h3>
+            <p><strong>Japan</strong> — First role in Japan. Adapted to a new country, language, and work culture while building new technical competencies from scratch.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="personal">
+          <div class="timeline-dot personal"></div>
+          <div class="timeline-card">
+            <span class="timeline-category personal">Personal</span>
+            <span class="timeline-year">2019 – Present</span>
+            <h3>Exploring Japan</h3>
+            <p>Traveled across <strong>22 of Japan's 47 prefectures</strong>, continuing his lifelong mission as an explorer — pen and camera always in hand.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">May 2020 – Dec 2025</span>
+            <h3>NOC Engineer – NTT</h3>
+            <p><strong>Tokyo, Japan</strong> — Monitored global network operations and submarine cable systems, ensuring reliable global connectivity. Earned <strong>Remarkable Performer</strong> designation four times.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="personal">
+          <div class="timeline-dot personal"></div>
+          <div class="timeline-card">
+            <span class="timeline-category personal">Personal</span>
+            <span class="timeline-year">2019 – 2026</span>
+            <h3>Featured in Media</h3>
+            <p>Appeared in <strong>CLP Magazine</strong> (2019, p.21), <strong>DI Insider Life</strong> (pp.16 &amp; 36), <strong>Rupali Bangladesh</strong> e-paper (2026), and <strong>Daily Punorutthan</strong>.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-category="professional">
+          <div class="timeline-dot professional"></div>
+          <div class="timeline-card">
+            <span class="timeline-category professional">Professional</span>
+            <span class="timeline-year">Dec 2025 – Present</span>
+            <h3>Data Center Technician – Microsoft</h3>
+            <p><strong>Tokyo, Japan</strong> — The dream realized. After being rejected in 2022, Nasim joined Microsoft's Tokyo data center team — proving that persistence, not perfection, wins.</p>
+            <span class="timeline-badge">Current Role</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREATIVE WORLD ===== -->
+  <section id="creative">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Creative World</span>
+        <h2>Words, Melodies &amp; Stories</h2>
+        <p class="section-desc">Nasim expresses his inner world through Bengali poetry, prose, and song — a decade of creativity woven between two homelands.</p>
+      </div>
+      <div class="creative-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="poem">Poems</button>
+        <button class="filter-btn" data-filter="story">Stories</button>
+        <button class="filter-btn" data-filter="song">Songs</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+      </div>
+      <div class="creative-grid">
+
+        <div class="creative-card reveal" data-category="story">
+          <div class="card-accent story"></div>
+          <span class="card-tag story">Story</span>
+          <div class="card-bengali">ড্রয়ারে চিরকুট লিখে বাড়ি ছাড়া ছেলে</div>
+          <h3>The Boy Who Left Home with a Note</h3>
+          <p>From Kushtia to Microsoft Tokyo — a raw, honest story of rejection, persistence, and the dream that refused to die. One of his most personal pieces.</p>
+          <span class="card-date">March 2026</span>
+          <a href="http://bengali-71.blogspot.com/" target="_blank" rel="noopener" class="card-link">Read on Blogspot →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="story">
+          <div class="card-accent story"></div>
+          <span class="card-tag story">Essay</span>
+          <div class="card-bengali">বিদায় NTT</div>
+          <h3>Farewell, NTT</h3>
+          <p>A heartfelt farewell to five years at NTT — reflecting on connections, submarine cables, and nights spent watching the world's data flow.</p>
+          <span class="card-date">December 2025</span>
+          <a href="http://bengali-71.blogspot.com/" target="_blank" rel="noopener" class="card-link">Read on Blogspot →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="poem">
+          <div class="card-accent poem"></div>
+          <span class="card-tag poem">Poem</span>
+          <div class="card-bengali">প্রতীক্ষার তুমি</div>
+          <h3>Expectation of You</h3>
+          <p>"The hand feels dry, cracked... writing doesn't come to these hands, and the heart feels somewhat indifferent..." — A poem of longing across distance.</p>
+          <span class="card-date">July 2021</span>
+          <a href="http://bengali-71.blogspot.com/search/label/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE" target="_blank" rel="noopener" class="card-link">Read on Blogspot →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="poem">
+          <div class="card-accent poem"></div>
+          <span class="card-tag poem">Poem</span>
+          <div class="card-bengali">একটাই আশ্রয়</div>
+          <h3>Only One Refuge</h3>
+          <p>"Whatever I do, my mother says 'correct'... even if I turn everything upside down..." — A tender ode to a mother's unconditional love.</p>
+          <span class="card-date">July 2021</span>
+          <a href="http://bengali-71.blogspot.com/search/label/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE" target="_blank" rel="noopener" class="card-link">Read on Blogspot →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="poem">
+          <div class="card-accent poem"></div>
+          <span class="card-tag poem">Collection</span>
+          <div class="card-bengali">সমগ্র কবিতা</div>
+          <h3>Complete Poetry Collection</h3>
+          <p>Ten years of Bengali poetry — organized by anniversary year, spanning love, longing, homeland, and life in Japan. Birthday poems, wedding poems, and much more.</p>
+          <span class="card-date">2011 – Present</span>
+          <a href="http://bengali-71.blogspot.com/search/label/%E0%A6%95%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A6%BE" target="_blank" rel="noopener" class="card-link">Browse Collection →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="story">
+          <div class="card-accent story"></div>
+          <span class="card-tag story">Blog</span>
+          <div class="card-bengali">গল্প ও স্মৃতি</div>
+          <h3>Stories &amp; Memories</h3>
+          <p>Personal essays on life in Japan, cultural adaptation, the vaccine experience, and the everyday magic of a life lived fully and intentionally.</p>
+          <span class="card-date">2021 – Present</span>
+          <a href="http://bengali-71.blogspot.com/search/label/%E0%A6%97%E0%A6%B2%E0%A7%8D%E0%A6%AA" target="_blank" rel="noopener" class="card-link">Read Stories →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="song">
+          <div class="card-accent song"></div>
+          <span class="card-tag song">Music</span>
+          <div class="card-bengali">গান</div>
+          <h3>Songs by Kabi</h3>
+          <p>Original songs and heartfelt renditions spanning Bengali, Hindi, Urdu, and Japanese — a reflection of his multilingual soul and love for music across cultures.</p>
+          <span class="card-date">Various</span>
+          <a href="https://sites.google.com/view/bengali71" target="_blank" rel="noopener" class="card-link">Listen on SoundCloud →</a>
+        </div>
+
+        <div class="creative-card reveal" data-category="video">
+          <div class="card-accent video"></div>
+          <span class="card-tag video">Video</span>
+          <div class="card-bengali">শর্ট ফিল্ম ও ভিডিও</div>
+          <h3>Short Films &amp; Videos</h3>
+          <p>From event hosting to short films — Nasim's visual storytelling captures life in Japan and Bangladesh with warmth, humor, and deep authenticity.</p>
+          <span class="card-date">Various</span>
+          <a href="https://sites.google.com/view/bengali71" target="_blank" rel="noopener" class="card-link">Watch on YouTube →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MEDIA HUB ===== -->
+  <section id="media">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Media Hub</span>
+        <h2>Explore Kabi's World</h2>
+        <p class="section-desc">His stories, poems, and experiences live across multiple platforms — choose your way in.</p>
+      </div>
+      <div class="media-grid">
+        <a href="http://bengali-71.blogspot.com/" target="_blank" rel="noopener" class="media-card">
+          <div class="media-icon blog-icon">✍</div>
+          <h3>Blog</h3>
+          <p>Bengali-71 Blogspot — poems, personal essays, stories, and reflections from two homelands.</p>
+          <span class="media-link">bengali-71.blogspot.com →</span>
+        </a>
+        <a href="https://sites.google.com/view/bengali71" target="_blank" rel="noopener" class="media-card">
+          <div class="media-icon site-icon">◈</div>
+          <h3>Portfolio Site</h3>
+          <p>Full creative portfolio including songs, videos, and all written works in one place.</p>
+          <span class="media-link">sites.google.com/view/bengali71 →</span>
+        </a>
+        <a href="https://www.facebook.com/JapaneBengali" target="_blank" rel="noopener" class="media-card">
+          <div class="media-icon fb-icon">f</div>
+          <h3>Facebook</h3>
+          <p>Life in Japan through a Bengali lens — updates, photos, and cultural observations.</p>
+          <span class="media-link">JapaneBengali →</span>
+        </a>
+        <a href="https://www.linkedin.com/in/iamkabi/" target="_blank" rel="noopener" class="media-card">
+          <div class="media-icon li-icon">in</div>
+          <h3>LinkedIn</h3>
+          <p>Professional profile, career milestones, and Microsoft journey updates.</p>
+          <span class="media-link">linkedin.com/in/iamkabi →</span>
+        </a>
+      </div>
+
+      <div class="press-section">
+        <h3 class="press-title">As Seen In</h3>
+        <div class="press-grid">
+          <div class="press-item">
+            <span class="press-year">2019</span>
+            <span class="press-name">CLP Magazine</span>
+            <span class="press-detail">Page 21</span>
+          </div>
+          <div class="press-item">
+            <span class="press-year">—</span>
+            <span class="press-name">DI Insider Life</span>
+            <span class="press-detail">Pages 16 &amp; 36</span>
+          </div>
+          <div class="press-item">
+            <span class="press-year">2026</span>
+            <span class="press-name">Rupali Bangladesh</span>
+            <span class="press-detail">E-paper Feature</span>
+          </div>
+          <div class="press-item">
+            <span class="press-year">—</span>
+            <span class="press-name">Daily Punorutthan</span>
+            <span class="press-detail">News Article</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's Connect</h2>
+        <p class="section-desc">Whether you want to discuss technology, share a poem, or simply say hello — Kabi is always just a message away.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/iamkabi/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon li-bg">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.facebook.com/JapaneBengali" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon fb-bg">f</span>
+          <span>Facebook</span>
+        </a>
+        <a href="http://bengali-71.blogspot.com/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon blog-bg">B</span>
+          <span>Blog</span>
+        </a>
+        <a href="https://sites.google.com/view/bengali71" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon site-bg">G</span>
+          <span>Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p class="footer-name">Kabir Md Nasim Al Awal — Kabi</p>
+      <p class="footer-tagline">Engineer by Day. Poet by Heart. Explorer Always.</p>
+      <p class="footer-copy">© 2026 · Tokyo, Japan</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
